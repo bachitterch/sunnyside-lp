@@ -1,0 +1,19 @@
+{
+	"name": "template",
+	"version": "1.0.0",
+	"description": "Parcel Tailwind CSS Template",
+	"source": "src/index.html",
+	"author": "Bachitter Chahal",
+	"license": "MIT",
+	"private": false,
+	"scripts": {
+		"dev": "parcel -p 3000 --open",
+		"build": "parcel build -p 3000 --open"
+	},
+	"devDependencies": {
+		"autoprefixer": "^10.4.2",
+		"parcel": "^2.3.2",
+		"postcss": "^8.4.7",
+		"tailwindcss": "^3.0.23"
+	}
+}
