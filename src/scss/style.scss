@@ -1,0 +1,278 @@
+/* Color Palette */
+
+:root {
+  --soft-red: hsl(7, 99%, 70%);
+  --yellow: hsl(51, 100%, 49%);
+  --dark-cyan: hsl(167, 40%, 24%);
+  --dark-blue: hsl(198, 62%, 26%);
+  --medium-dark-cyan: hsl(168, 34%, 41%);
+  --desat-blue: hsl(212, 27%, 19%);
+  --dark-grayish-blue: hsl(213, 9%, 39%);
+  --grayish-blue: hsl(232, 10%, 55%);
+  --blue: hsl(210, 4%, 67%);
+  --white: hsl(0, 0%, 100%);
+}
+
+/* CSS Reset */
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.5;
+  height: 100%;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Global Styling */
+
+h1 {
+  font-family: 'Fraunces', serif;
+  font-weight: 900;
+}
+
+h2,
+h3,
+h4 {
+  font-family: 'Fraunces', serif;
+  font-weight: 700;
+}
+
+.link {
+  position: relative;
+  color: var(--desat-blue);
+}
+
+.link::before {
+  content: '';
+  position: absolute;
+  left: -7px;
+  right: -7px;
+  bottom: -2px;
+  height: 10px;
+  transition: opacity 0.6s cubic-bezier(0.53, 0.21, 0, 1);
+  background-color: var(--yellow);
+  opacity: 0.3;
+  border-radius: 99px;
+  z-index: -10;
+}
+
+.link:hover::before {
+  opacity: 0.8;
+}
+
+body {
+  font-family: 'Barlow', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+/* Util Classes */
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  padding: 0 24px;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+/* Normal Styling */
+
+.banner {
+  height: 68vh;
+  min-height: 537px;
+  background: url(/public/images/mobile/image-header.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .banner {
+    background: url(/public/images/desktop/image-header.jpg);
+    height: 60vh;
+    min-height: 785px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.header {
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 24px;
+}
+
+.header__logo {
+  color: var(--white);
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.hero__title {
+  margin-top: -3rem;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.hero__arrow_down {
+  margin-top: 3rem;
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+}
+
+.transform {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.transform__text {
+  padding: 36px 0;
+}
+
+.transform__h1 {
+  font-size: 2rem;
+  color: var(--desat-blue);
+}
+
+.transform__info {
+  margin: 24px 0;
+  color: var(--dark-grayish-blue);
+}
+
+.transform__link {
+  font-family: 'Fraunces', serif;
+  font-weight: 700;
+}
+
+.stand_out {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.stand_out__text {
+  padding: 36px 0;
+}
+
+.stand_out__h1 {
+  font-size: 2rem;
+  color: var(--desat-blue);
+}
+
+.stand_out__info {
+  margin: 24px 0;
+  color: var(--dark-grayish-blue);
+}
+
+.stand_out__link {
+  font-family: 'Fraunces', serif;
+  font-weight: 700;
+}
+
+.service {
+  min-height: 600px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: center;
+  padding: 0 24px;
+}
+
+.service__text {
+  margin-bottom: 3.75rem;
+}
+
+.service h2 {
+  font-size: 1.75rem;
+}
+
+.graphic-design {
+  background-image: url(/public/images/mobile/image-graphic-design.jpg);
+  background-position: center;
+  background-size: cover;
+  color: var(--dark-cyan);
+}
+
+.photography {
+  background-image: url(/public/images/mobile/image-photography.jpg);
+  background-position: center;
+  background-size: cover;
+  color: var(--dark-cyan);
+}
