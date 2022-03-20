@@ -1,5 +1,4 @@
-@use 'base';
-@use 'components';
-@use 'layout';
-@use 'reset';
-@use 'variables';
+@use 'reset'; //CSS Reset
+@use 'base'; //Base Styles
+@use 'layout'; //Flexbox and Grid Stuff
+@use 'components'; //Section Styles
