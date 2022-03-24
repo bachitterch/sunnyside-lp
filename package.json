@@ -1,10 +1,10 @@
 {
-	"name": "template",
-	"version": "1.0.0",
-	"description": "Parcel Tailwind CSS Template",
-	"author": "Bachitter Chahal",
-	"license": "MIT",
-	"main": "index.js",
+  "name": "template",
+  "version": "1.0.0",
+  "description": "Parcel Tailwind CSS Template",
+  "author": "Bachitter Chahal",
+  "license": "MIT",
+  "main": "index.js",
   "browserslist": "> 0.5%, last 2 versions, IE 10",
   "scripts": {
     "dev": "webpack serve",
@@ -12,8 +12,8 @@
     "build:dev": "webpack",
     "lint": "eslint .js,.jsx,.ts,.tsx src --cache && echo 'Linting complete!'"
   },
-	"private": true,
-	"devDependencies": {
+  "private": true,
+  "devDependencies": {
     "@babel/core": "^7.17.8",
     "@babel/eslint-parser": "^7.17.0",
     "@babel/preset-env": "^7.16.11",
@@ -34,5 +34,9 @@
     "webpack": "^5.70.0",
     "webpack-cli": "^4.9.2",
     "webpack-dev-server": "^4.7.4"
+  },
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=7.0.0"
   }
 }
