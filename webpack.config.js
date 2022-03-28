@@ -26,7 +26,7 @@ module.exports = {
     path: path.resolve(__dirname, 'build'),
     filename: '[name].[contenthash].js',
     clean: true,
-    assetModuleFilename: '[name][ext]',
+    assetModuleFilename: 'images/[name][ext]',
   },
   devServer: {
     watchFiles: ['src/**/*.html', 'src/**/*.scss', 'src/**/*.cs'],
@@ -54,7 +54,7 @@ module.exports = {
       },
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
-        type: 'asset/resource'
+        type: 'asset/resource',
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,

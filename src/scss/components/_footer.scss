@@ -1,0 +1,26 @@
+.footer {
+  color: $dark-cyan;
+  text-align: center;
+  padding: 68px 0;
+  background-color: $medium-dark-cyan;
+  a {
+    color: $dark-cyan;
+  }
+  svg {
+    fill: $dark-cyan;
+    margin: 0 auto 44px auto;
+  }
+  &__links {
+    margin-bottom: 90px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 56px;
+  }
+  &__socials {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 28px;
+  }
+}

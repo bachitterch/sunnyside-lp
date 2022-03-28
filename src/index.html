@@ -17,23 +17,19 @@
       href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <script src="https://unpkg.com/feather-icons"></script>
   </head>
   <body>
-    <div class="banner items-center">
-      <div class="container">
+    <!-- Header and Hero Section  -->
+
+    <div class="banner flex items-center">
+      <div class="container padding-x">
         <header class="header">
           <a href="/"
             ><img class="header__logo" src="/images/logo.svg" alt="logo"
           /></a>
           <nav class="navbar">
-            <ul>
+            <ul class="navbar__links">
               <li>
                 <a class="navbar__link" href="#">About</a>
               </li>
@@ -47,10 +43,12 @@
                 <a class="navbar__link" href="#">Contact</a>
               </li>
             </ul>
-
-            <i class="fa-solid fa-bars text-white"></i>
           </nav>
+          <i class="header_menu_toggle" data-feather="menu"></i>
         </header>
+
+        <!-- Hero Section  -->
+
         <section class="hero">
           <h1 class="hero__title">WE ARE CREATIVES</h1>
           <img
@@ -61,16 +59,17 @@
         </section>
       </div>
     </div>
+
+    <!-- Features Section -->
+
     <section class="features">
       <div class="transform">
-        <img
-          class="transform__img"
-          src="/images/mobile/image-transform.jpg"
-          alt="egg"
-        />
-        <div class="container flex items-center justify-center flex-col">
+        <img class="transform__img" src="" alt="egg" />
+        <div
+          class="container flex items-center justify-center flex-col padding-x"
+        >
           <div class="transform__text">
-            <h2 class="transform__h1">Transform your brand</h2>
+            <h2 class="transform__heading">Transform your brand</h2>
             <p class="transform__info">
               We are a full-service creative agency specializing in helping
               brands grow fast. Engage your clients through compelling visuals
@@ -80,15 +79,11 @@
           </div>
         </div>
       </div>
-      <div class="stand_out">
-        <img
-          class="stand_out__img"
-          src="/images/mobile/image-stand-out.jpg"
-          alt="egg"
-        />
+      <div class="stand_ou">
+        <img class="stand_out__img" src="" alt="egg" />
         <div class="container flex items-center justify-center flex-col">
-          <div class="stand_out__text">
-            <h2>Stand out to the right audience</h2>
+          <div class="stand_out__text padding-x">
+            <h2 class="stand_out__heading">Stand out to the right audience</h2>
             <p class="stand_out__info">
               Using a collaborative formula of designers, researchers,
               photographers, videographers, and copywriters, we’ll build and
@@ -99,6 +94,9 @@
         </div>
       </div>
     </section>
+
+    <!-- Services Section -->
+
     <section class="services">
       <div class="service graphic-design">
         <div class="service__text">
@@ -120,10 +118,13 @@
         </div>
       </div>
     </section>
+
+    <!-- Testimonials Section -->
+
     <section class="testimonials">
       <h2>Client testimonials</h2>
       <div class="testimonials__content">
-        <div class="testimonial container">
+        <div class="testimonial container padding-x">
           <img src="/images/image-emily.jpg" alt="Customer-Emily" />
           <p>
             We put our trust in Sunnyside and they delivered, making sure our
@@ -132,7 +133,7 @@
           <h3>Emily.R</h3>
           <span>Marketing Director</span>
         </div>
-        <div class="testimonial container">
+        <div class="testimonial container padding-x">
           <img src="/images/image-thomas.jpg" alt="Customer-Thomas" />
           <p>
             Sunnyside’s enthusiasm coupled with their keen interest in our
@@ -141,7 +142,7 @@
           <h3>Thomas.S</h3>
           <span>Chief Operating Officer</span>
         </div>
-        <div class="testimonial container">
+        <div class="testimonial container padding-x">
           <img src="/images/image-jennie.jpg" alt="Customer-Jennie" />
           <p>
             Incredible end result! Our sales increased over 400% when we worked
@@ -152,18 +153,18 @@
         </div>
       </div>
     </section>
-    <section class="image-gallery">
-      <img
-        src="/images/mobile/image-gallery-milkbottles.jpg"
-        alt="milk-bottles"
-      />
-      <img src="/images/mobile/image-gallery-orange.jpg" alt="orange" />
-      <img src="/images/mobile/image-gallery-cone.jpg" alt="ice-cream-cone" />
-      <img
-        src="/images/mobile/image-gallery-sugar-cubes.jpg"
-        alt="sugar-cubes"
-      />
+
+    <!-- Image Gallery -->
+
+    <section class="image-gallery container">
+      <img id="milk-bottles" src="" alt="milk-bottles" />
+      <img id="orange" src="" alt="orange" />
+      <img id="ice-cream-cone" src="" alt="ice-cream-cone" />
+      <img id="sugar-cubes" src="" alt="sugar-cubes" />
     </section>
+
+    <!-- Footer -->
+
     <footer class="footer">
       <div class="footer__logo">
         <svg width="124" height="24" xmlns="http://www.w3.org/2000/svg">
@@ -193,5 +194,8 @@
         /></a>
       </div>
     </footer>
+    <script>
+      feather.replace()
+    </script>
   </body>
 </html>

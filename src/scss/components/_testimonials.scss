@@ -1,0 +1,33 @@
+.testimonials {
+  text-align: center;
+  padding: 68px 0;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+  }
+
+  h2 {
+    color: $grayish-blue;
+    text-transform: uppercase;
+    letter-spacing: 0.15rem;
+    margin-bottom: 62px;
+  }
+  img {
+    border-radius: 99999px;
+    margin: 0 auto 38px auto;
+    width: 72px;
+  }
+  p {
+    color: $dark-grayish-blue;
+    margin-bottom: 40px;
+  }
+  h3 {
+    color: $desat-blue;
+    margin-bottom: 14px;
+  }
+  span {
+    color: $blue;
+  }
+}
