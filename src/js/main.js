@@ -12,3 +12,12 @@ document.querySelector('#milk-bottles').src = milkBottles
 document.querySelector('#orange').src = orange
 document.querySelector('#ice-cream-cone').src = iceCreamCone
 document.querySelector('#sugar-cubes').src = sugarCubes
+
+const Nav = document.querySelector('.mobile.nav')
+const NavToggle = document.querySelector('.header__nav_toggle')
+
+
+
+NavToggle.addEventListener('click', () => {
+  Nav.classList.toggle('open')
+})

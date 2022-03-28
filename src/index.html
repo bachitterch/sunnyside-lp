@@ -11,25 +11,37 @@
       href="/images/favicon-32x32.png"
     />
     <title>Frontend Mentor | Sunnyside agency landing page</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap"
-      rel="stylesheet"
-    />
+
+    <!-- Feather Icons -->
     <script src="https://unpkg.com/feather-icons"></script>
   </head>
   <body>
-    <!-- Header and Hero Section  -->
+    <!-- Hero Section  -->
 
-    <div class="banner flex items-center">
-      <div class="container padding-x">
-        <header class="header">
+    <section class="hero flex flex-col items-center">
+      <div class="container padding-x flex flex-col">
+        <header class="header flex justify-between items-center">
           <a href="/"
             ><img class="header__logo" src="/images/logo.svg" alt="logo"
           /></a>
           <nav class="navbar">
-            <ul class="navbar__links">
+            <div class="mobile__nav">
+              <ul>
+                <li>
+                  <a class="navbar__link" href="#">About</a>
+                </li>
+                <li>
+                  <a class="navbar__link" href="#">Services</a>
+                </li>
+                <li>
+                  <a class="navbar__link" href="#">Projects</a>
+                </li>
+                <li>
+                  <a class="navbar__link button mobile_btn" href="#">Contact</a>
+                </li>
+              </ul>
+            </div>
+            <ul class="navbar__links desktop__nav">
               <li>
                 <a class="navbar__link" href="#">About</a>
               </li>
@@ -40,25 +52,23 @@
                 <a class="navbar__link" href="#">Projects</a>
               </li>
               <li>
-                <a class="navbar__link" href="#">Contact</a>
+                <a class="navbar__link button desktop__btn" href="#">Contact</a>
               </li>
             </ul>
           </nav>
-          <i class="header_menu_toggle" data-feather="menu"></i>
+          <i class="header__nav_toggle" data-feather="menu"></i>
         </header>
 
-        <!-- Hero Section  -->
-
-        <section class="hero">
-          <h1 class="hero__title">WE ARE CREATIVES</h1>
+        <div class="hero__text text">
+          <h1 class="text__title">WE ARE CREATIVES</h1>
           <img
-            class="hero__arrow_down"
+            class="text__arrow_down"
             src="/images/icon-arrow-down.svg"
             alt="arrow-down"
           />
-        </section>
+        </div>
       </div>
-    </div>
+    </section>
 
     <!-- Features Section -->
 
