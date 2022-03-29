@@ -25,23 +25,22 @@
             ><img class="header__logo" src="/images/logo.svg" alt="logo"
           /></a>
           <nav class="navbar">
-            <div class="mobile__nav">
-              <ul>
-                <li>
-                  <a class="navbar__link" href="#">About</a>
-                </li>
-                <li>
-                  <a class="navbar__link" href="#">Services</a>
-                </li>
-                <li>
-                  <a class="navbar__link" href="#">Projects</a>
-                </li>
-                <li>
-                  <a class="navbar__link button mobile_btn" href="#">Contact</a>
-                </li>
-              </ul>
-            </div>
-            <ul class="navbar__links desktop__nav">
+            <ul class="mobile__nav">
+              <li>
+                <a href="#">About</a>
+              </li>
+              <li>
+                <a href="#">Services</a>
+              </li>
+              <li>
+                <a href="#">Projects</a>
+              </li>
+              <li>
+                <a class="button mobile_btn" href="#">Contact</a>
+              </li>
+            </ul>
+
+            <ul class="desktop__nav">
               <li>
                 <a class="navbar__link" href="#">About</a>
               </li>
@@ -56,7 +55,11 @@
               </li>
             </ul>
           </nav>
-          <i class="header__nav_toggle" data-feather="menu"></i>
+          <i
+            class="header__nav_toggle"
+            id="navToggleBtn"
+            data-feather="menu"
+          ></i>
         </header>
 
         <div class="hero__text text">
@@ -73,11 +76,9 @@
     <!-- Features Section -->
 
     <section class="features">
-      <div class="transform">
+      <div class="transform container">
         <img class="transform__img" src="" alt="egg" />
-        <div
-          class="container flex items-center justify-center flex-col padding-x"
-        >
+        <div class="flex items-center justify-center flex-col padding-x">
           <div class="transform__text">
             <h2 class="transform__heading">Transform your brand</h2>
             <p class="transform__info">
@@ -89,10 +90,10 @@
           </div>
         </div>
       </div>
-      <div class="stand_ou">
+      <div class="stand_out container">
         <img class="stand_out__img" src="" alt="egg" />
-        <div class="container flex items-center justify-center flex-col">
-          <div class="stand_out__text padding-x">
+        <div class="flex items-center justify-center flex-col padding-x">
+          <div class="stand_out__text">
             <h2 class="stand_out__heading">Stand out to the right audience</h2>
             <p class="stand_out__info">
               Using a collaborative formula of designers, researchers,

@@ -11,5 +11,8 @@ module.exports = {
     'sourceType': 'module',
     'ecmaFeatures': { 'jsx': true },
   },
-  'rules': {}
+  'rules': {
+    'no-unused-vars': 0,
+    'semi': 0,
+  }
 }

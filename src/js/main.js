@@ -13,11 +13,12 @@ document.querySelector('#orange').src = orange
 document.querySelector('#ice-cream-cone').src = iceCreamCone
 document.querySelector('#sugar-cubes').src = sugarCubes
 
-const Nav = document.querySelector('.mobile.nav')
-const NavToggle = document.querySelector('.header__nav_toggle')
-
-
+const Nav = document.querySelector('.mobile__nav')
+const NavToggle = document.querySelector('#navToggleBtn')
+const NavClose = document.querySelectorAll('fadeUp')
 
 NavToggle.addEventListener('click', () => {
-  Nav.classList.toggle('open')
+
+  !Nav.classList.contains('open') ? Nav.classList.add('open') : Nav.classList.remove('open')
+
 })
