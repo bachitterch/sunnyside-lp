@@ -1,6 +1,6 @@
 import '../scss/style.scss'
 import logo from '../../public/images/logo.svg'
-import arrowDown from '../../public/images/arrow-down.svg'
+import arrowDown from '../../public/images/icon-arrow-down.svg'
 import transform from '../../public/images/image-transform.jpg'
 import standOut from '../../public/images/image-stand-out.jpg'
 import milkBottles from '../../public/images/image-gallery-milkbottles.jpg'
@@ -8,8 +8,8 @@ import orange from '../../public/images/image-gallery-orange.jpg'
 import iceCreamCone from '../../public/images/image-gallery-cone.jpg'
 import sugarCubes from '../../public/images/image-gallery-sugarcubes.jpg'
 
-document.querySelector('.header__logo').src = transform
-document.querySelector('.text__arrow-down').src = transform
+document.querySelector('.header__logo').src = logo
+document.querySelector('.text__arrow-down').src = arrowDown
 document.querySelector('.transform__img').src = transform
 document.querySelector('.stand_out__img').src = standOut
 document.querySelector('#milk-bottles').src = milkBottles
