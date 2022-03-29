@@ -9,7 +9,7 @@ import iceCreamCone from '../../public/images/image-gallery-cone.jpg'
 import sugarCubes from '../../public/images/image-gallery-sugarcubes.jpg'
 
 document.querySelector('.header__logo').src = logo
-document.querySelector('.text__arrow-down').src = arrowDown
+document.querySelector('.text__arrow_down').src = arrowDown
 document.querySelector('.transform__img').src = transform
 document.querySelector('.stand_out__img').src = standOut
 document.querySelector('#milk-bottles').src = milkBottles
