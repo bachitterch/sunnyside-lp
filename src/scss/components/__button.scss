@@ -1,6 +1,11 @@
 .button {
   border-radius: 99px;
-  width: 140px;
+
   padding-inline: 34px;
   padding-block: 20px;
+
+  @media (min-width: 768px) {
+    padding-inline: 40px;
+    padding-block: 16px;
+  }
 }

@@ -1,0 +1,27 @@
+@use '../vars/colors' as *;
+@use '../vars/typography' as *;
+
+.desktop__nav {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: flex;
+    gap: 48px;
+  }
+
+  li a {
+    color: $white;
+  }
+
+  .desktop__btn {
+    font-family: $font-serif;
+    background-color: $white;
+    color: $very-dark-desat-blue;
+    transition: all 0.15s ease-in-out;
+
+    &:hover {
+      color: $white;
+      background-color: rgb($white, 0.3);
+    }
+  }
+}

@@ -1,15 +1,23 @@
+@use '../vars/colors' as *;
+
 .footer {
-  color: $dark-cyan;
+  color: $dark-mod-cyan;
   text-align: center;
   padding: 68px 0;
-  background-color: $medium-dark-cyan;
+  background-color: $dark-mod-cyan;
+
   a {
-    color: $dark-cyan;
+    color: $dark-desat-cyan;
+    &:hover {
+      color: $white;
+    }
   }
+
   svg {
-    fill: $dark-cyan;
+    fill: $dark-desat-cyan;
     margin: 0 auto 44px auto;
   }
+
   &__links {
     margin-bottom: 90px;
     display: flex;
@@ -17,6 +25,7 @@
     flex-wrap: wrap;
     gap: 56px;
   }
+
   &__socials {
     display: flex;
     justify-content: center;

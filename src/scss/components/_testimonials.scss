@@ -1,3 +1,5 @@
+@use '../vars/colors' as *;
+
 .testimonials {
   text-align: center;
   padding: 68px 0;
@@ -6,6 +8,13 @@
     display: flex;
     flex-direction: column;
     gap: 64px;
+  }
+
+  @media (min-width: 768px) {
+    &__content {
+      flex-direction: row;
+      gap: 16px;
+    }
   }
 
   h2 {
@@ -20,14 +29,14 @@
     width: 72px;
   }
   p {
-    color: $dark-grayish-blue;
+    color: $very-dark-grayish-blue;
     margin-bottom: 40px;
   }
   h3 {
-    color: $desat-blue;
+    color: $very-dark-desat-blue;
     margin-bottom: 14px;
   }
   span {
-    color: $blue;
+    color: $grayish-blue;
   }
 }

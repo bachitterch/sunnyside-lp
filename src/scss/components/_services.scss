@@ -1,3 +1,12 @@
+@use '../vars/colors' as *;
+
+.services {
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
 .service {
   min-height: 600px;
   width: 100%;
@@ -8,6 +17,8 @@
   padding: 0 24px;
 
   &__text {
+    max-width: 45ch;
+    margin-inline: auto;
     margin-bottom: 3.75rem;
   }
 
@@ -20,7 +31,7 @@
   background-image: url(/public/images/image-graphic-design.jpg);
   background-position: center;
   background-size: cover;
-  color: $dark-cyan;
+  color: $dark-desat-cyan;
 }
 
 .photography {

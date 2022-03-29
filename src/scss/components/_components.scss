@@ -1,6 +1,11 @@
+//Components
+@forward './desktop_nav';
+@forward './mobile_nav';
+
+//Sections
 @forward 'hero';
 @forward 'features';
-@forward 'link';
-// @forward 'testimonials';
-// @forward 'image-gallery';
-// @forward 'footer';
+@forward './services';
+@forward 'testimonials';
+@forward 'image_gallery';
+@forward 'footer';

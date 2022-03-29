@@ -15,12 +15,9 @@
 }
 
 .padding-y {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-
   @media (min-width: 768px) {
-    padding-top: 2.375rem;
-    padding-bottom: 2.375rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
   }
 }
 

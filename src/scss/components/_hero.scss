@@ -35,56 +35,6 @@
 
     .navbar {
       position: relative;
-
-      .mobile__nav {
-        position: fixed;
-        top: 105px;
-        left: 0;
-        right: 0;
-
-        background-color: $white;
-        width: calc(100% - 44px);
-        margin-inline: auto;
-        min-height: 305px;
-        display: flex;
-        flex-direction: column;
-        gap: 38px;
-        padding-block-start: 40px;
-        padding-block-end: 60px;
-        padding-inline: 0;
-
-        a {
-          color: $dark-grayish-blue;
-        }
-
-        transform: scale(0);
-        transform-origin: top right;
-        transition: transform 0.2s ease-in-out;
-
-        li .mobile_btn {
-          margin-top: 100px;
-          color: $very-dark-desat-blue;
-          background-color: $yellow;
-          font-family: $font-serif;
-          text-transform: uppercase;
-        }
-
-        @media (min-width: 768px) {
-          display: none;
-        }
-      }
-      .open {
-        transform: scale(1);
-      }
-    }
-
-    .desktop__nav {
-      display: none;
-
-      @media (min-width: 768px) {
-        display: flex;
-        gap: 48px;
-      }
     }
 
     &__nav_toggle {
