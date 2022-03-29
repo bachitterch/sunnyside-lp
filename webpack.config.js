@@ -72,6 +72,7 @@ module.exports = {
       template: path.resolve(__dirname, 'src/index.html'),
       filename: 'index.html',
       title: 'Webpack 5 Boilerplate',
+      favicon: path.resolve(__dirname, 'public/images/favicon-32x32.png'),
       minify: minify,
       inject: 'body',
     })
