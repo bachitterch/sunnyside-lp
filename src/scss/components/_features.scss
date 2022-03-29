@@ -4,11 +4,11 @@
 .features {
   display: flex;
   flex-direction: column;
+  text-align: left;
 }
 
 .transform,
 .stand_out {
-  text-align: center;
   display: grid;
 
   grid-template-rows: repeat(2, 1fr);
@@ -24,7 +24,13 @@
   }
 
   &__text {
-    padding: 36px 0;
+    padding-block: 36px;
+    padding-inline: 36px;
+
+    @media screen and (min-width: 768px) {
+      width: 100%;
+      max-width: 44ch;
+    }
   }
 
   &__heading {
