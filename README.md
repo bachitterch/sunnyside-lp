@@ -24,7 +24,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.png)
+![](https://res.cloudinary.com/dtl9hbz1e/image/upload/v1649078048/bachitter.dev/Projects/sunnyside-ageny-landing-page_u3iu5p.webp)
 
 ### Links
 
